@@ -23,7 +23,7 @@ from this project template:
 1. Open a terminal window
 2. Execute the compile script (this will take a few minutes):
 ```
-curl https://raw.github.com/fjakobs/cloud9-gae-template/master/compile-gae.sh | bash
+curl https://raw.github.com/patalanjohnson/cloud9-gae-template/master/compile-gae.sh | bash
 ```
 
 ### Create a new GAE application based on this project template
@@ -34,7 +34,7 @@ test it.
 
 1. Got to your Cloud9 dashboard <https://c9.io/dashboard.html>
 2. Select `create new workspace` -> `clone from url`
-3. Use `git://github.com/fjakobs/cloud9-gae-template.git` as URL
+3. Use `git://github.com/patalanjohnson/cloud9-gae-template.git` as URL
 4. Open the project
 5. In the project open a new Terminal window
 6. Execute the compile script (this will take a few minutes)
@@ -49,5 +49,13 @@ the terminal. However to run the app server locally you need to make sure that
 it is listening on the Cloud9 port and ip address so our proxy can find it.
 
 ```
-dev_appserver.py -a $IP -p $PORT .
+dev_appserver.py --host $IP --port $PORT .
+```
+
+## View the server
+
+In your browser, go to this URL, using your workspace name and username:
+
+```
+http://workspace_name.username.c9users.io:8080/
 ```
