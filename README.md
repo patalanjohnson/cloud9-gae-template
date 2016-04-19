@@ -12,19 +12,8 @@ template.
 
 You have two options to add GAE support.
 
-1. Add GAE support to an exsiting Cloud9 workspace
-2. Create a new GAE application based on this project template
-
-### Add GAE support to your existing Cloud9 workspace
-
-You can easily add GAE support to any Cloud9 project by running the compile script
-from this project template:
-
-1. Open a terminal window
-2. Execute the compile script (this will take a few minutes):
-```
-curl https://raw.github.com/patalanjohnson/cloud9-gae-template/master/compile-gae.sh | bash
-```
+1. Create a new GAE application based on this project template.
+2. Add GAE support to an exsiting Cloud9 workspace.
 
 ### Create a new GAE application based on this project template
 
@@ -42,6 +31,17 @@ test it.
 ./compile-gae.sh
 ```
 
+### Add GAE support to your existing Cloud9 workspace
+
+You can easily add GAE support to any Cloud9 project by running the compile script
+from this project template:
+
+1. Open a terminal window
+2. Execute the compile script (this will take a few minutes):
+```
+curl https://raw.github.com/patalanjohnson/cloud9-gae-template/master/compile-gae.sh | bash
+```
+
 ## Run the app
 
 Once everything is compiled and installed you can use all gae python scripts in 
@@ -57,5 +57,5 @@ dev_appserver.py --host $IP --port $PORT .
 In your browser, go to this URL, using your workspace name and username:
 
 ```
-http://workspace_name.username.c9users.io:8080/
+http://workspace_name.username.c9users.io/
 ```
